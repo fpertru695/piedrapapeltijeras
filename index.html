@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>PIEDRA PAPEL TIJERAS</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+
+  <script src="js/main.js"> </script>
+  <audio src="sounds/intro.mp3" autoplay="autoplay"></audio>
+
+  <script>
+    // Variable para rastrear si la imagen ya ha sido clickeada
+    var imagenClickeada = false;
+    // Obtén una referencia a la imagen por su id
+    var imagen = document.getElementById("miImagen");
+
+    // Agrega un manejador de eventos al hacer clic en la imagen
+    imagen.addEventListener("click", function() {
+      imagen.className+="fadeout"
+    });
+  </script>
+</head>
+
+<body>
+<section id="inicio">
+  <section id="logo" class="logo">
+    <img src="img/logo.png">
+  </section>
+  <section id="start" class="start">
+    <a href="juego.html">
+      <img
+        id="miImagen"
+        alt="Cambiar imagen"
+        height="198"
+        onmouseout="this.src='img/start.png';"
+        onmouseover="this.src='img/start2.png';"
+        src="img/start.png"
+      />
+    </a>
+  </section>
+</section>
+</body>
+
+</html>
