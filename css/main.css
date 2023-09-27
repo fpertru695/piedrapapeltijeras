@@ -3,6 +3,7 @@ body {
   text-align: center;
   margin: 0;
   height: 100vh;
+
 }
 .container{
   align-items: center;
@@ -86,6 +87,10 @@ body {
   object-fit: contain;
   object-position: center center;
 }
+/*#section8:hover{*/
+/*  border-color:red;*/
+/*  border-width: 4px;*/
+/*}*/
 
 #section7 button{
   background-color: #f00; /* Color de fondo rojo */
@@ -126,7 +131,6 @@ body {
 }
 
 
-
 /* Matriz y las celdas. Que ocupen toda la pantalla */
 .matrix {
   display: flex;
@@ -146,6 +150,8 @@ body {
   justify-content: center;
   position: relative;
   font-size: 1.2em;
+ font-family: "Arial Black";
+
 }
 
 .cell img {
@@ -162,9 +168,12 @@ body {
   height: 150px;
 }
 
+.with-border:hover{
+  border-color: red;
+}
+
 #creditos{
   color:white;
-  font-family: 'ArcadeClassic';
 }
 
 footer {
