@@ -18,7 +18,7 @@
   <meta name="theme-color" content="#fafafa">
 
   <script src="js/main.js"> </script>
-  <audio src="sounds/intro.mp3" autoplay="autoplay"></audio>
+   <!--<audio src="sounds/intro.mp3" autoplay="autoplay" loop="loop"></audio>-->
 
   <script>
     // Variable para rastrear si la imagen ya ha sido clickeada
@@ -34,6 +34,13 @@
 </head>
 
 <body>
+<audio src="sounds/menu.mp3" autoplay="autoplay" id="my_audio" loop="loop"></audio>
+<script type="text/javascript">
+  window.onload=function(){
+    document.getElementById("my_audio").play();
+  }
+</script>
+
 <section id="inicio">
   <section id="logo" class="logo">
     <img src="img/logo.png">
@@ -51,6 +58,10 @@
     </a>
   </section>
 </section>
+
+<footer>
+  <h1>&copy; Repositorio:  <a href="https://github.com/fpertru695/piedrapapeltijeras"> AQUÍ </a> </h1>
+</footer>
 </body>
 
 </html>

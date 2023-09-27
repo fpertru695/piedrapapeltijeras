@@ -17,16 +17,16 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
-
+  <audio src="sounds/menu.mp3" autoplay="autoplay" loop="loop"></audio>
 </head>
 <body>
-<div class="matrix">
+<div class="matrix" id="container">
   <!-- Sección 1. Sin nada -->
   <section class="cell">1</section>
 
   <!-- Sección 2: Logo de Street Fighter 2 -->
   <section class="cell" id="section2">
-    <img src="img/logo.png" alt="SF2 Logo" style="width: 100%; height: 100%;">
+   <img src="img/logo.png" alt="SF2 Logo" style="width: 70%; height: 70%;">
   </section>
 
   <!-- Sección 3. Sin nada-->
@@ -34,22 +34,22 @@
 
   <!-- Sección 4: Replica la selección del usuario -->
   <section class="cell" id="section4">
-    <img src="" alt="Selección Usuario" style="width: 100%; height: 100%;">
+    <img src="img/jugador.gif" alt="Selección Usuario">
   </section>
 
   <!-- Sección 5: Muestra el resultado de la partida con imagenes -->
   <section class="cell" id="section5">
-    <img src="" alt="Resultado" style="width: 100%; height: 100%;">
+    <img src="img/resultado.png" alt="Resultado" style="width: 100%; height: 100%;">
   </section>
 
   <!-- Sección 6: Muestra la elección de la máquina una vez le demos a jugar. -->
   <section class="cell" id="section6">
-    <img src="" alt="Selección Máquina" style="width: 100%; height: 100%;">
+    <img src="img/maquina.gif" alt="Selección Máquina">
   </section>
 
   <!-- Sección 7: Botón que inicia la partida -->
   <section class="cell" id="section7">
-    <button onclick="jugar()">Jugar</button>
+    <button onclick="jugar(),playAudio()">Jugar</button>
   </section>
 
   <!-- Sección 8: Actual gameplay -->
@@ -66,7 +66,10 @@
   </section>
 
   <!-- Sección 9. Sin nada (¿Creéditos?) -->
-  <section class="cell">9</section>
+  <section class="cell" id="creditos"> Una creación de los terroristas:
+  <br> Franciso Miguel "Ciru" Pérez Trujillo
+  <br> Jose Enrique "Kike" Alvarado Nuñez
+  <br> Andrés "Andrew" Gil Rodríguez</section>
 </div>
 
   <!-- Hacer footer o algo.-->
